@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbuks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="circulo"></div>
+    <img src="img/logo.png" alt="imagem logo starbuks" class="logo">
+    <div class="conteúdo">
+        <div class="text-box">
+            <h2>Não é apenas café é <span>Starbuck</span> </h2>
+            <p>"O segredo é o coração.Eu ponho emoção em cada xícara de café,na Starbuks".
+                Quando os clientes sentem isso respondam com bondade.
+                A frase é do livro “Dedique-se de coração: A história de como a Starbucks se
+                tornou uma grande empresa de xícara em xícara”.Nele, Howard Schultz, CEO da Starbucks,
+                revela o propósito da empresa: atingir o sentimento das pessoas e, claro,
+                ainda ter lucros. Percebeu como o propósito da Starbucks pode nos inspirar?</p>
+            <button>Clique aqui e veja o conteúdo completo!</button>
+        </div>
+        <div class="copo-box">
+            <img src="img/img1.png" alt="imagem copo starbuks" class="big-copo">
+        </div>
+    </div>
+    <div class="menu">
+        <img src="img/img-pequena1.png" alt="imagem-copo-starbuks" class="mini-copo verde">
+        <img src="img/img-pequena2.png" alt="imagem-copo-starbuks" class="mini-copo rosa">
+        <img src="img/img-pequena3.png" alt="imagem-copo-starbuks" class="mini-copo turquesa">
+    </div>
+</body>
+<script>
+    let circulo = document.querySelector("circulo")
+    let imgCopo = document.querySelector(".big-copo")
+    let verde = document.querySelector(".verde")
+    let rosa = document.querySelector(".rosa")
+    let turquesa = document.querySelector(".turquesa")
+
+    rosa.addEventListener("click", () => {
+        imgCopo.src = "img/img2.png"
+        circulo.style.background = "#eb7495"
+    })
+
+    verde.addEventListener("click", () => {
+        imgCopo.src = "./img/img1.png"
+        circulo.style.background = "#017143"
+    })
+
+    turquesa.addEventListener("click", () => {
+        imgCopo.src = "img/img3.png"
+    })
+</script>
+
+</html>
